@@ -7,7 +7,7 @@ myuser=$(whoami)
 echo "Hello $myuser, welcome!"
 
 # creates env variable and export it
-export COURSE_ID="REPO_NAME"
+export COURSE_ID="__REPO_NAME__"
 
 # Check permissions of .token file if it exists
 if [ -f "$HOME/.token" ]; then
