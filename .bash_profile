@@ -1,13 +1,13 @@
 # .bash_profile
 
 # Get the username
-USER_NAME=$(whoami)
+myuser=$(whoami)
 
 # Greet the user
 <<<<<<< HEAD
-echo "Hello "$USER_NAME", welcome!"
+echo "Hello "$myuser", welcome!"
 =======
-echo "Hello ""$USER_NAME"""
+echo "Hello ""$myuser"""
 >>>>>>> origin/main
 #creates env variable and export it
 
