@@ -5,7 +5,7 @@ myuser=$(whoami)
 
 # Greet the user
 echo "Hello "$myuser", welcome!"
-=======
+
 echo "Hello ""$myuser""
 >>>>>>> origin/main
 #creates env variable and export it
