@@ -1,5 +1,5 @@
 # .bash_profile
-#
+
 # Get the username
 USER_NAME=$(whoami)
 
