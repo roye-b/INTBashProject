@@ -4,7 +4,11 @@
 USER_NAME=$(whoami)
 
 # Greet the user
+<<<<<<< HEAD
 echo "Hello "$USER_NAME", welcome!"
+=======
+echo "Hello $USER_NAME, welcome!"
+>>>>>>> origin/main
 #creates env variable and export it
 
 export COURSE_ID="REPO_NAME"
@@ -31,4 +35,3 @@ fi
 if [ lsof -i :8080 >/dev/null 2>&1 ]; then
     kill -9 $(lsof -t -i :8080)
 fi
-
