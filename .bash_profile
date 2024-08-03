@@ -17,7 +17,7 @@ if [ -f "$HOME/.token" ]; then
 fi
 
 # Set default file creation permissions
-umask 027
+umask 006
 
 # Update PATH to include usercommands directory
 export PATH=$PATH:$HOME/usercommands
