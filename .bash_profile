@@ -4,7 +4,6 @@
 myuser=$(whoami)
 
 # Greet the user
-<<<<<<< HEAD
 echo "Hello "$myuser", welcome!"
 =======
 echo "Hello ""$myuser""
