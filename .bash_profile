@@ -11,7 +11,7 @@ export COURSE_ID="__REPO_NAME__"
 
 # Check permissions of .token file if it exists
 if [ -f "$HOME/.token" ]; then
-    if [ $(stat -c "%a" "$HOME/.token") -ne 600 ]; then
+    if [ "$(stat -c "%a" "$HOME/.token")" -ne 600 ]; then
         echo "Warning: .token file has too open permissions"
     fi
 fi
@@ -32,7 +32,7 @@ alias ltxt='ls *.txt'
 if [ ! -d "$HOME/tmp" ]; then
     mkdir "$HOME/tmp"
 else
-    rm -rf "$HOME/tmp/*"
+    rm -rf "$HOME/tmp/"{*,.*} 2>/dev/null
 fi
 
 # Kill process using port 8080 if it exists
